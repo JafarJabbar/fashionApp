@@ -71,15 +71,15 @@ class _OnePageState extends State<OnePage> {
               ),
             ),
             Padding(
-              padding: const EdgeInsets.all(15),
+              padding: const EdgeInsets.all(10),
               child: Material(
                 elevation: 10,
                 borderRadius: BorderRadius.circular(20),
                 child: Container(
-                  padding: EdgeInsets.all(15),
+                  padding: EdgeInsets.all(10),
                   width: double.infinity,
                   margin: EdgeInsets.all(10),
-                  height: 470,
+                  height: 550,
                   child: Column(
                     children: <Widget>[
                       Row(
@@ -91,19 +91,180 @@ class _OnePageState extends State<OnePage> {
                             decoration: BoxDecoration(
                                 borderRadius: BorderRadius.circular(40),
                                 image: DecorationImage(
-                                    image: AssetImage('assets/images/model1.jpeg'), fit: BoxFit.cover)),
+                                    image:
+                                        AssetImage('assets/images/model1.jpeg'),
+                                    fit: BoxFit.cover)),
                           ),
                           Container(
-                            width: MediaQuery.of(context).size.width-250,
+                            width: MediaQuery.of(context).size.width - 250,
                             child: Column(
                               crossAxisAlignment: CrossAxisAlignment.start,
                               children: <Widget>[
-                                Text('Daisy',style: TextStyle(fontFamily: 'Montserrat',fontSize: 16,fontWeight: FontWeight.bold),),
-                                Text('34 minutes ago',style: TextStyle(fontFamily: 'Montserrat',fontSize: 12,color: Colors.grey,fontWeight: FontWeight.bold)),
+                                Text(
+                                  'Daisy',
+                                  style: TextStyle(
+                                      fontFamily: 'Montserrat',
+                                      fontSize: 16,
+                                      fontWeight: FontWeight.bold),
+                                ),
+                                Text('34 minutes ago',
+                                    style: TextStyle(
+                                        fontFamily: 'Montserrat',
+                                        fontSize: 12,
+                                        color: Colors.grey,
+                                        fontWeight: FontWeight.bold)),
                               ],
                             ),
                           ),
-                          IconButton(icon: Icon(Icons.more_vert),)
+                          IconButton(
+                            icon: Icon(Icons.more_vert),
+                          )
+                        ],
+                      ),
+                      SizedBox(
+                        height: 10,
+                      ),
+                      Text(
+                        "This official website features a ribbed knit zipper jacket that is"
+                        "modern and stylish. It looks very temparament and is recommend to friends",
+                        style: TextStyle(
+                            fontSize: 12,
+                            fontFamily: 'Montserrat',
+                            color: Colors.grey),
+                      ),
+                      SizedBox(
+                        height: 10,
+                      ),
+                      SizedBox(
+                        height: 10,
+                      ),
+                      Column(
+                        children: <Widget>[
+                          Row(
+                            children: <Widget>[
+                              Container(
+                                height: 250,
+                                width:
+                                    (MediaQuery.of(context).size.width - 50) /
+                                        2,
+                                decoration: BoxDecoration(
+                                    borderRadius: BorderRadius.circular(5),
+                                    image: DecorationImage(
+                                        image: AssetImage(
+                                            'assets/images/modelgrid1.jpeg'),
+                                        fit: BoxFit.cover)),
+                              ),
+                              SizedBox(
+                                width: 10,
+                              ),
+                              Column(
+                                children: <Widget>[
+                                  Container(
+                                    height: 120,
+                                    margin: EdgeInsets.only(bottom: 10),
+                                    width: (MediaQuery.of(context).size.width -
+                                            100) /
+                                        2,
+                                    decoration: BoxDecoration(
+                                        borderRadius: BorderRadius.circular(5),
+                                        image: DecorationImage(
+                                            image: AssetImage(
+                                                'assets/images/modelgrid2.jpeg'),
+                                            fit: BoxFit.cover)),
+                                  ),
+                                  Container(
+                                    height: 120,
+                                    width: (MediaQuery.of(context).size.width -
+                                            100) /
+                                        2,
+                                    decoration: BoxDecoration(
+                                        borderRadius: BorderRadius.circular(5),
+                                        image: DecorationImage(
+                                            image: AssetImage(
+                                                'assets/images/modelgrid3.jpeg'),
+                                            fit: BoxFit.cover)),
+                                  ),
+                                ],
+                              )
+                            ],
+                          ),
+
+                          SizedBox(
+                            height: 20,
+                          ),
+
+                          Row(
+                            children: <Widget>[
+                              Center(
+                                  child: Container(
+                                    padding: EdgeInsets.all(7),
+                                    margin: EdgeInsets.all(7),
+                                    child: Text('# Louis Voution',style: TextStyle(),),
+                                    decoration: BoxDecoration(
+                                        color: Colors.brown.withOpacity(.2),
+                                      borderRadius: BorderRadius.circular(5)
+                                    ),
+                                  ),
+                              ),                         Center(
+                                  child: Container(
+                                    padding: EdgeInsets.all(7),
+                                    margin: EdgeInsets.all(7),
+                                    child: Text('# Chloe',style: TextStyle(),),
+                                    decoration: BoxDecoration(
+                                        color: Colors.brown.withOpacity(.2),
+                                      borderRadius: BorderRadius.circular(5)
+                                    ),
+                                  ),
+                              ),
+                            ],
+                          ),
+                          Divider(),
+                          SizedBox(
+                            height: 10  ,
+                          ),
+
+                          Row(
+                            children: <Widget>[
+                              Icon(Icons.share,
+                                  color: Colors.grey.withOpacity(0.5)),
+                              SizedBox(width: 5,),
+                              Text(
+                                '2.3k',
+                                style: TextStyle(
+                                    fontSize: 16,
+                                    color: Colors.grey.withOpacity(0.5)),
+                              ),
+                              SizedBox(width: 10,),
+                              Icon(Icons.chat_bubble,
+                                  color: Colors.grey.withOpacity(0.5)),
+                              SizedBox(width: 5,),
+                              Text(
+                                '2.3k',
+                                style: TextStyle(
+                                    fontSize: 16,
+                                    color: Colors.grey.withOpacity(0.5)),
+                              ),
+                            Container(
+                              width: (MediaQuery.of(context).size.width)/2,
+                              child: Row(
+                                mainAxisAlignment: MainAxisAlignment.end,
+                                children: <Widget>[
+                                  SizedBox(width: 10,),
+                                  Icon(Icons.favorite,
+                                      color: Colors.red),
+                                  SizedBox(width: 5,),
+                                  Text(
+                                    '3.2k',
+                                    style: TextStyle(
+                                        fontSize: 16,
+                                        color: Colors.grey.withOpacity(0.5)),
+                                  ),
+
+                                ],
+                              ),
+                            )
+                            ],
+                          ),
                         ],
                       )
                     ],
@@ -111,7 +272,6 @@ class _OnePageState extends State<OnePage> {
                 ),
               ),
             )
-
           ],
         ));
   }
@@ -159,7 +319,7 @@ class _OnePageState extends State<OnePage> {
             borderRadius: BorderRadius.circular(20),
             color: Colors.brown,
           ),
-        )
+        ),
       ],
     );
   }
